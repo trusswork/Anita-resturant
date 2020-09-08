@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500&display=swap');
+* {
+    transition: all ease-in-out 250ms;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.offset::before {
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
+
+
+/* navigation */
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.navbar-brand img {
+    height: 3rem;
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #b14622;
+}
+
+
+/* End of navigation  */
+
+
+/* start of home logo */
+
+.home-inner {
+    background-image: url(/assets/img/landing.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.home-logo {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -50%;
+    top: 20%;
+    color: #fff;
+}
+
+.home-logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-shadow: .1rem .1rem .3rem black;
+}
+
+.home-logo h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+
+
+/* end of home logo */
+
+
+/* start of  menu */
+
+.port-item {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.port-desc {
+    max-width: 87%;
+    position: absolute;
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    z-index: 1;
+    bottom: 1em;
+    left: .8em;
+    right: 0em;
+    color: white;
+    background-color: rgba(177, 70, 34, .3);
+    padding-top: 1em;
+    text-transform: uppercase;
+    transform: translateY(180%);
+    text-align: center;
+}
+
+.port-item img {
+    max-width: 100%;
+}
+
+.port-item:hover .port-desc {
+    transform: translateY(0%);
+}
+
+
+/* end of  menu */
+
+
+/* start of specials */
+
+.fast-food {
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+
+.fast-img img {
+    margin-top: .5rem;
+}
+
+.fast-img img:hover {
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fast-pagh {
+    padding: 0 3em;
+}
+
+.fast-pagh h1 {
+    font-weight: 700;
+    text-decoration: underline;
+    padding-bottom: 1.7rem;
+}
+
+.fast-pagh p {
+    padding: 1em 0;
+    border-bottom: 1px solid #b14622;
+}
+
+.drink-img img:hover {
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fast-btn button {
+    color: #b14622;
+}
+
+.fast-btn button:hover {
+    color: white;
+    background-color: #b14622;
+}
+
+
+/* start of testimonials */
+
+.test-burger {
+    margin-top: 3em;
+    background-image: url(/assets/img/foodsBg.jpg);
+    height: 70vh;
+    position: relative;
+}
+
+.container-md {
+    position: absolute;
+    z-index: 1;
+    top: 5em;
+    left: 3.7em;
+}
+
+.bur-a {
+    background-color: white;
+    padding: .5em 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    border: .5px solid #b14622;
+}
+
+.bur-a a {
+    padding-left: 4em;
+    color: black;
+    text-decoration: none;
+    border-left: 1px solid #b14622;
+}
+
+.bur-a a:hover {
+    color: #b14622;
+}
+
+.bur-img .col-md-4 {
+    background-color: #ddd;
+    padding: 1em 3em;
+    color: #b14622;
+}
+
+.bur-img img {
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.bur-img h3 {
+    text-align: center;
+    padding-top: 1em;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 90%;
+    margin-top: 2em;
+    padding-top: 1em;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.test-m {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+}
+
+.test-m h3 {
+    font-weight: 700;
+    padding-bottom: .2em;
+    color: #b14622;
+}
+
+.test-m h4 {
+    font-weight: 500;
+}
+
+.test-m p {
+    padding-top: .5em;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.test-m img {
+    padding: 0 2em;
+}
+
+.test-m .col-md-5 {
+    border-left: .5px solid darkgray;
+}
+
+footer {
+    margin-top: 6em;
+    background-color: #b14622;
+}
+
+footer .conatct-inner {
+    padding-top: 3em;
+    color: #ddd;
+}
+
+form .btn-danger {
+    margin-left: 2em;
+    border-radius: 10px;
+}
+
+form input {
+    outline: none;
+    background-color: #ddd;
+    width: 300px;
+    color: black;
+}
+
+.conatct-inner li {
+    text-decoration: none;
+    list-style: none;
+    padding: .5em 0;
+}
+
+.conatct-inner a {
+    color: white;
+    font-size: 1em;
+}
+
+.conatct-inner a:hover {
+    text-decoration: none;
+    color: darkgray;
+}
+
+footer .icon {
+    text-align: center;
+}
+
+footer a {
+    color: #ddd;
+}
+
+footer svg.svg-inline--fa {
+    font-size: 1.6rem;
+    margin: 1.2rem .5rem 0 0;
+    text-align: center;
+}
